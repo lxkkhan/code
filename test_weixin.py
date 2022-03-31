@@ -13,4 +13,8 @@ class TestWeChat():
         self.driver.quit()
 
     def test_demo0(self):
-        selenium
+        pass
+
+    def test_cookie(self):
+        cookies = self.driver.get_cookies()
+        print(cookies)
