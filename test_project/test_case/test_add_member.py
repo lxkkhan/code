@@ -1,3 +1,4 @@
+import pytest
 from nb_log import LogManager
 
 from test_project.page.main_page import MainPage
@@ -5,6 +6,7 @@ from test_project.page.main_page import MainPage
 
 class TestAddMember():
     logger_a = LogManager('').get_logger_and_add_handlers(log_filename='ha.log')
+
     def setup(self):
         self.main = MainPage()
     def test_add_member(self):
