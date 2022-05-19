@@ -10,7 +10,6 @@ class BasePage():
     def __init__(self, driver_base=None):
 
         if driver_base is None:
-
             option = Options()
             option.debugger_address = "127.0.0.1:9292"
             self.driver = webdriver.Chrome(options=option)
