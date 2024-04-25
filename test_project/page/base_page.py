@@ -16,7 +16,7 @@ class BasePage():
             self.driver.maximize_window()
 
         else:
-            self.driver:WebDriver = driver_base
+            self.driver: WebDriver = driver_base
         if self.url != "":
             self.driver.get(self.url)
         # 隐式等待

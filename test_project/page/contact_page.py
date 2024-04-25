@@ -7,6 +7,7 @@ class ContactPage(BasePage):
         self.css(".js_add_member:nth-child(2)").click()
         return AddMemeberPage(self.driver)
 
-
     def get_member_list(self):
         name_list = self.csses()
+
+

@@ -30,7 +30,7 @@ class TestBaidu(Base):
         print(self.driver.execute_script('return document.title;return JSON.stringify(performance.timing'))
 
     def test_datatime(self):
-        self.driver.get("")
+        self.driver.get("https://hotels.ctrip.com/?allianceid=4897&sid=799747&ouid=xiecheng508&bd_creative=27771225883&bd_vid=6569648140456789256&keywordid=138219528443")
 
         self.driver.execute_script(
             'a = return document.getElementById("train_date"); a.removeAttribute("readOnly");a.value')

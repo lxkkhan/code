@@ -9,10 +9,10 @@ class TestAddMember():
 
     def setup(self):
         self.main = MainPage()
+
     def test_add_member(self):
         # 主页进入添加成员页
         self.main.go_to_add_member().add_member_page()
-
 
     def test_contact_add_member(self):
         # self.main.css(".ww_commonImg_CloseDialog").click()
